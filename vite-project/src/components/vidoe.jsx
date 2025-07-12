@@ -172,7 +172,7 @@ function Apple() {
 
   async function sendToBackend(message) {
     try {
-      await fetch("http://localhost:5000/api/logs", {
+      await fetch("https://your-backend.onrender.com/api/logs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message }),
